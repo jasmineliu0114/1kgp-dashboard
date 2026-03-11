@@ -1,0 +1,236 @@
+[
+    {
+        "ACB": {
+            "continent": "AFR",
+            "plots": {
+                "pca": "assets/plots/ACB_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/ACB_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "ASW": {
+            "continent": "AFR",
+            "plots": {
+                "pca": "assets/plots/ASW_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/ASW_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "ESN": {
+            "continent": "AFR",
+            "plots": {
+                "pca": "assets/plots/ESN_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/ESN_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "GWD": {
+            "continent": "AFR",
+            "plots": {
+                "pca": "assets/plots/GWD_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/GWD_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "LWK": {
+            "continent": "AFR",
+            "plots": {
+                "pca": "assets/plots/LWK_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/LWK_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "MSL": {
+            "continent": "AFR",
+            "plots": {
+                "pca": "assets/plots/MSL_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/MSL_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "YRI": {
+            "continent": "AFR",
+            "plots": {
+                "pca": "assets/plots/YRI_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/YRI_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "CLM": {
+            "continent": "AMR",
+            "plots": {
+                "pca": "assets/plots/CLM_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/CLM_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "MXL": {
+            "continent": "AMR",
+            "plots": {
+                "pca": "assets/plots/MXL_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/MXL_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "PEL": {
+            "continent": "AMR",
+            "plots": {
+                "pca": "assets/plots/PEL_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/PEL_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "PUR": {
+            "continent": "AMR",
+            "plots": {
+                "pca": "assets/plots/PUR_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/PUR_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "CDX": {
+            "continent": "EAS",
+            "plots": {
+                "pca": "assets/plots/CDX_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/CDX_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "CHB": {
+            "continent": "EAS",
+            "plots": {
+                "pca": "assets/plots/CHB_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/CHB_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "CHS": {
+            "continent": "EAS",
+            "plots": {
+                "pca": "assets/plots/CHS_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/CHS_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "JPT": {
+            "continent": "EAS",
+            "plots": {
+                "pca": "assets/plots/JPT_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/JPT_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "KHV": {
+            "continent": "EAS",
+            "plots": {
+                "pca": "assets/plots/KHV_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/KHV_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "CEU": {
+            "continent": "EUR",
+            "plots": {
+                "pca": "assets/plots/CEU_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/CEU_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "FIN": {
+            "continent": "EUR",
+            "plots": {
+                "pca": "assets/plots/FIN_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/FIN_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "GBR": {
+            "continent": "EUR",
+            "plots": {
+                "pca": "assets/plots/GBR_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/GBR_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "IBS": {
+            "continent": "EUR",
+            "plots": {
+                "pca": "assets/plots/IBS_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/IBS_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "TSI": {
+            "continent": "EUR",
+            "plots": {
+                "pca": "assets/plots/TSI_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/TSI_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "BEB": {
+            "continent": "SAS",
+            "plots": {
+                "pca": "assets/plots/BEB_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/BEB_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "GIH": {
+            "continent": "SAS",
+            "plots": {
+                "pca": "assets/plots/GIH_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/GIH_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "ITU": {
+            "continent": "SAS",
+            "plots": {
+                "pca": "assets/plots/ITU_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/ITU_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "PJL": {
+            "continent": "SAS",
+            "plots": {
+                "pca": "assets/plots/PJL_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/PJL_unique_in_AFR_umap_animated.html"
+            }
+        }
+    },
+    {
+        "STU": {
+            "continent": "SAS",
+            "plots": {
+                "pca": "assets/plots/STU_unique_in_AFR_pca_animated.html",
+                "umap": "assets/plots/STU_unique_in_AFR_umap_animated.html"
+            }
+        }
+    }
+]

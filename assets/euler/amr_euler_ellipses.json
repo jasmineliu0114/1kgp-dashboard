@@ -1,0 +1,62 @@
+[
+  {
+    "abbreviation": "CLM",
+    "h": 0,
+    "k": 61.7912,
+    "a": 1376.4952,
+    "b": 1433.3644,
+    "phi": -0.2111,
+    "common_variants": 6257661,
+    "unshared_common_variants": 155423,
+    "description": "Colombian in Medellin, Colombia",
+    "sampled_individuals": 94,
+    "color": "#7b4173",
+    "fill": "none",
+    "stroke_dasharray": "none"
+  },
+  {
+    "abbreviation": "MXL",
+    "h": 144.9546,
+    "k": 61.7912,
+    "a": 1428.7191,
+    "b": 1338.9749,
+    "phi": 0.5788,
+    "common_variants": 6009927,
+    "unshared_common_variants": 86434,
+    "description": "Mexican Ancestry in Los Angeles, California",
+    "sampled_individuals": 64,
+    "color": "#a55194",
+    "fill": "none",
+    "stroke_dasharray": "none"
+  },
+  {
+    "abbreviation": "PEL",
+    "h": 202.3512,
+    "k": -57.4725,
+    "a": 1303.307,
+    "b": 1315.6133,
+    "phi": 1.2052,
+    "common_variants": 5465916,
+    "unshared_common_variants": 130720,
+    "description": "Peruvian in Lima, Peru",
+    "sampled_individuals": 85,
+    "color": "#ce6dbd",
+    "fill": "none",
+    "stroke_dasharray": "none"
+  },
+  {
+    "abbreviation": "PUR",
+    "h": 9.9244,
+    "k": 219.3237,
+    "a": 1452.7912,
+    "b": 1390.4011,
+    "phi": 2.3169,
+    "common_variants": 6425090,
+    "unshared_common_variants": 409935,
+    "description": "Puerto Rican in Puerto Rico",
+    "sampled_individuals": 104,
+    "color": "#de9ed6",
+    "fill": "none",
+    "stroke_dasharray": "none"
+  }
+]
