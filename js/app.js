@@ -170,7 +170,8 @@ function updatePopulationPanel(panelObj, popCode, datum, titlePrefix) {
   panelObj.caption.textContent =
     `Sampled individuals: ${formatNumber(datum.sampled_individuals)} · ` +
     `Common variants: ${formatNumber(datum.common_variants)} · ` +
-    `Unshared common variants: ${formatNumber(datum.unshared_common_variants)}`;
+    `Unshared common variants within continent group: ${formatNumber(datum.unshared_common_variants)} · ` +
+    `Unshared common variants globally: ${formatNumber(datum.unshared_common_variants_all)}`;
 
   if (path) {
     panelObj.iframe.src = path;
@@ -295,7 +296,7 @@ async function createSuperpopSection(tooltipEl) {
     selectId: "superpop_pca_select",
     selectOptions: superpopPcaOptions,
     defaultValue: "unique_pca",
-    placeholderText: "Click a superpopulation ellipse to display a PCA plot."
+    placeholderText: "Click a superpopulation ellipse to display a PCA plot of unique common variants."
   });
 
   const umapPanel = createPlotPanel({
@@ -303,7 +304,7 @@ async function createSuperpopSection(tooltipEl) {
     selectId: "superpop_umap_select",
     selectOptions: superpopUmapOptions,
     defaultValue: "unique_umap",
-    placeholderText: "Click a superpopulation ellipse to display a UMAP plot."
+    placeholderText: "Click a superpopulation ellipse to display a UMAP plot of unique common variants."
   });
 
   pcaPanel.select.addEventListener("change", () => {
@@ -393,7 +394,7 @@ async function createContinentExplorerSection(tooltipEl) {
     selectId: "continent_pca_select",
     selectOptions: PANEL1_OPTIONS,
     defaultValue: PANEL1_OPTIONS[0]?.value ?? null,
-    placeholderText: "Click a population ellipse to display a PCA plot."
+    placeholderText: "Click a population ellipse to display a PCA plot of unique common variants."
   });
 
   const umapPanel = createPlotPanel({
@@ -401,7 +402,7 @@ async function createContinentExplorerSection(tooltipEl) {
     selectId: "continent_umap_select",
     selectOptions: PANEL2_OPTIONS,
     defaultValue: PANEL2_OPTIONS[0]?.value ?? null,
-    placeholderText: "Click a population ellipse to display a UMAP plot."
+    placeholderText: "Click a population ellipse to display a UMAP plot of unique common variants."
   });
 
   function refreshContinentPanels() {
