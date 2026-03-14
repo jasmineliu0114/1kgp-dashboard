@@ -47,5 +47,5 @@ export const GLOBAL_MODES = [
   { value: "base", label: "Base" },
   { value: "stability", label: "With stability markers" },
   { value: "contour", label: "With contours" },
-  { value: "stability_contour", label: "With stability + contours" }
+  { value: "contour_centroid", label: "With centroid contours" }
 ];
