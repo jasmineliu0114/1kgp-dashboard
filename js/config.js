@@ -32,15 +32,15 @@ export const CONTINENTS = [
 ];
 
 export const PANEL1_OPTIONS = [
-    { value: "unique_pca", label: "Population only common variants · PCA" },
-    { value: "unique_pca_cont", label: "Population only common variants within continent group · PCA" },
-    { value: "unique_pca_cont_animated", label: "Population only common variants within continent group vs random subsamples · PCA" }
+    { value: "unique_pca", label: "Variants only common in population · PCA" },
+    { value: "unique_pca_cont", label: "Variants only common in population within continent subpops · PCA" },
+    { value: "unique_pca_cont_animated", label: "Variants only common in population within continent subpops · SNP Subset PCA vs. Random subsamples" }
 ];
 
 export const PANEL2_OPTIONS = [
-    { value: "unique_umap", label: "Population only common variants · UMAP" },
-    { value: "unique_umap_cont", label: "Population only common variants within continent group · UMAP" },
-    { value: "unique_umap_cont_animated", label: "Population only common variants within continent group vs random subsamples· UMAP" }
+    { value: "unique_umap", label: "Variants only common in population · UMAP" },
+    { value: "unique_umap_cont", label: "Variants only common in population within continent subpops · UMAP" },
+    { value: "unique_umap_cont_animated", label: "Variants only common in population within continent subpops · SNP Subset UMAP vs. Random subsamples" }
 ];
 
 export const GLOBAL_MODES = [

@@ -173,12 +173,13 @@ function updatePopulationPanel(panelObj, popCode, datum, titlePrefix) {
             `Sampled individuals: ${formatNumber(datum.sampled_individuals)} · ` +
             `Common variants: ${formatNumber(datum.common_variants)} · ` +
             `Unshared common variants globally: ${formatNumber(datum.unshared_common_variants)}`;
+    } else {
+        panelObj.caption.textContent =
+            `Sampled individuals: ${formatNumber(datum.sampled_individuals)} · ` +
+            `Common variants: ${formatNumber(datum.common_variants)} · ` +
+            `Unshared common variants within continent group: ${formatNumber(datum.unshared_common_variants)} · ` +
+            `Unshared common variants globally: ${formatNumber(datum.unshared_common_variants_all)}`;
     }
-    panelObj.caption.textContent =
-        `Sampled individuals: ${formatNumber(datum.sampled_individuals)} · ` +
-        `Common variants: ${formatNumber(datum.common_variants)} · ` +
-        `Unshared common variants within continent group: ${formatNumber(datum.unshared_common_variants)} · ` +
-        `Unshared common variants globally: ${formatNumber(datum.unshared_common_variants_all)}`;
 
     if (path) {
         panelObj.iframe.src = path;
@@ -190,6 +191,29 @@ function updatePopulationPanel(panelObj, popCode, datum, titlePrefix) {
         panelObj.placeholder.style.display = "block";
         panelObj.placeholder.textContent = `No plot available for ${popCode} (${mode}).`;
     }
+}
+
+function updateDropdownWithPop(selectEl, popCode) {
+    for (let i = 0; i < selectEl.options.length; i++) {
+        const baseLabel = selectEl.options[i].value;
+
+        // find original label from config
+        const original = [...selectEl.options][i].text.split(" (")[0];
+        const populationSplit = original.split("population");
+        if (populationSplit[1].includes("continent")) {
+            const contCode = state.populations[popCode]["continent"];
+            const contSplit = populationSplit[1].split("continent")
+            selectEl.options[i].text = `${populationSplit[0]}${popCode}${contSplit[0]}${contCode}${contSplit[1]}`;
+        } else {
+            selectEl.options[i].text = `${populationSplit[0]}${popCode}${populationSplit[1]}`;
+        }
+    }
+}
+
+function resetDropdownLabels(selectEl, optionsConfig) {
+    optionsConfig.forEach((opt, i) => {
+        selectEl.options[i].text = opt.label;
+    });
 }
 
 async function fetchEulerData(continentKey) {
@@ -223,6 +247,22 @@ async function renderEulerSection({
         tooltipEl,
         onSelectPopulation
     });
+    // renderEulerPlot({
+    //     containerEl: figureDiv,
+    //     ellipses,
+    //     continentKey: "AFR",
+    //     tooltipEl,
+    //     onSelectPopulation: (popCode, datum) => {
+    //         setContinentPopSelection(popCode, datum);
+    //         refreshContinentPanels();
+    //     },
+    //     onSelectRegion: (region) => {
+    //         console.log("Overlap region clicked:", region);
+    //         // Example:
+    //         // region.key      -> "ACB&ASW"
+    //         // region.members  -> ["ACB", "ASW"]
+    //     }
+    // });
 }
 
 async function createGlobalSection() {
@@ -336,8 +376,20 @@ async function createSuperpopSection(tooltipEl) {
         figureDiv,
         continentKey: "SP",
         tooltipEl,
+        // onSelectPopulation: (popCode, datum) => {
+        //     setSuperpopSelection(popCode, datum);
+        //     updatePopulationPanel(pcaPanel, popCode, datum, "Superpopulation · PCA");
+        //     updatePopulationPanel(umapPanel, popCode, datum, "Superpopulation · UMAP");
+        // }
         onSelectPopulation: (popCode, datum) => {
             setSuperpopSelection(popCode, datum);
+
+            resetDropdownLabels(pcaPanel.select, PANEL1_OPTIONS.filter(opt => opt.value === "unique_pca"));
+            resetDropdownLabels(umapPanel.select, PANEL2_OPTIONS.filter(opt => opt.value === "unique_umap"));
+
+            updateDropdownWithPop(pcaPanel.select, popCode);
+            updateDropdownWithPop(umapPanel.select, popCode);
+
             updatePopulationPanel(pcaPanel, popCode, datum, "Superpopulation · PCA");
             updatePopulationPanel(umapPanel, popCode, datum, "Superpopulation · UMAP");
         }
@@ -429,6 +481,14 @@ async function createContinentExplorerSection(tooltipEl) {
 
     pcaPanel.select.addEventListener("change", refreshContinentPanels);
     umapPanel.select.addEventListener("change", refreshContinentPanels);
+    // pcaPanel.select.addEventListener("change", () => {
+    //     resetDropdownLabels(pcaPanel.select, PANEL1_OPTIONS);
+    //     refreshContinentPanels();
+    // });
+    // umapPanel.select.addEventListener("change", () => {
+    //     resetDropdownLabels(umapPanel.select, PANEL2_OPTIONS);
+    //     refreshContinentPanels();
+    // });
 
     async function rerenderSelectedContinent() {
         resetPanel(pcaPanel, "Click a population ellipse to display a PCA plot.");
@@ -438,8 +498,19 @@ async function createContinentExplorerSection(tooltipEl) {
             figureDiv,
             continentKey: state.continentExplorer.selectedContinent,
             tooltipEl,
+            // onSelectPopulation: (popCode, datum) => {
+            //     setContinentPopSelection(popCode, datum);
+            //     refreshContinentPanels();
+            // }
             onSelectPopulation: (popCode, datum) => {
                 setContinentPopSelection(popCode, datum);
+
+                resetDropdownLabels(pcaPanel.select, PANEL1_OPTIONS);
+                resetDropdownLabels(umapPanel.select, PANEL2_OPTIONS);
+
+                updateDropdownWithPop(pcaPanel.select, popCode);
+                updateDropdownWithPop(umapPanel.select, popCode);
+
                 refreshContinentPanels();
             }
         });
