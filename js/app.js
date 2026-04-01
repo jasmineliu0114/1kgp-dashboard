@@ -1,9 +1,11 @@
-import { CONTINENTS, PANEL1_OPTIONS, PANEL2_OPTIONS, GLOBAL_MODES } from "./config.js";
+import { CONTINENTS, PANEL1_OPTIONS, PANEL2_OPTIONS, GLOBAL_MODES, GLOBAL_UMAP_MODES } from "./config.js";
 import {
     state,
     setSuperpopSelection,
+    setSuperpopColorScheme,
     setContinentSelection,
-    setContinentPopSelection
+    setContinentPopSelection,
+    setContinentColorScheme
 } from "./state.js";
 import { renderEulerPlot } from "./euler.js";
 
@@ -37,17 +39,57 @@ function formatNumber(x) {
     return Number(x).toLocaleString();
 }
 
-function getPopulationPlotPath(popCode, mode) {
+function getPopulationPlotPath(popCode, mode, colorScheme = null) {
     const pop = state.populations?.[popCode];
     if (!pop) return null;
-    return pop.plots?.[mode] || null;
+
+    const plotEntry = pop.plots?.[mode];
+    if (!plotEntry) return null;
+
+    if (typeof plotEntry === "string") {
+        return plotEntry;
+    }
+
+    if (colorScheme && plotEntry[colorScheme]) {
+        return plotEntry[colorScheme];
+    }
+
+    return plotEntry.superpop || plotEntry.subpop || null;
 }
 
-// Update these filenames to match your actual exported global HTML files.
 function getGlobalPlotPath(kind, mode) {
     // kind: "pca" or "umap"
-    // mode: "base", "stability", "contour", "stability_contour"
+    // mode: "base", "stability", "contour", "contour_centroid", "contour_[cont]"
     return `assets/plots/global_common_${kind}_${mode}.html`;
+}
+
+function createColorSchemeToggle({ id, defaultValue, options, onChange }) {
+    const wrapper = document.createElement("div");
+    wrapper.className = "toggle-group";
+
+    options.forEach(opt => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "toggle-button";
+        button.textContent = opt.label;
+        button.dataset.value = opt.value;
+
+        if (opt.value === defaultValue) {
+            button.classList.add("active");
+        }
+
+        button.addEventListener("click", () => {
+            wrapper.querySelectorAll(".toggle-button").forEach(btn => {
+                btn.classList.remove("active");
+            });
+            button.classList.add("active");
+            onChange(opt.value);
+        });
+
+        wrapper.appendChild(button);
+    });
+
+    return wrapper;
 }
 
 function createSectionBlock(titleText) {
@@ -59,7 +101,14 @@ function createSectionBlock(titleText) {
     title.textContent = titleText;
 
     section.appendChild(title);
-    return section;
+    return { section, title };
+}
+
+function createDescription(text) {
+    const desc = document.createElement("p");
+    desc.className = "section-description";
+    desc.textContent = text;
+    return desc;
 }
 
 function createControlsRow() {
@@ -155,14 +204,14 @@ function updateGlobalPanel(panelObj, kind) {
     }
 }
 
-function updatePopulationPanel(panelObj, popCode, datum, titlePrefix) {
+function updatePopulationPanel(panelObj, popCode, datum, titlePrefix, colorScheme = null) {
     if (!popCode || !datum) {
         resetPanel(panelObj, "Click a population ellipse to display a plot here.");
         return;
     }
 
     const mode = panelObj.select.value;
-    const path = getPopulationPlotPath(popCode, mode);
+    const path = getPopulationPlotPath(popCode, mode, colorScheme);
 
     panelObj.title.textContent =
         `${titlePrefix}: ${popCode}` + (datum.description ? ` — ${datum.description}` : "");
@@ -247,32 +296,41 @@ async function renderEulerSection({
         tooltipEl,
         onSelectPopulation
     });
-    // renderEulerPlot({
-    //     containerEl: figureDiv,
-    //     ellipses,
-    //     continentKey: "AFR",
-    //     tooltipEl,
-    //     onSelectPopulation: (popCode, datum) => {
-    //         setContinentPopSelection(popCode, datum);
-    //         refreshContinentPanels();
-    //     },
-    //     onSelectRegion: (region) => {
-    //         console.log("Overlap region clicked:", region);
-    //         // Example:
-    //         // region.key      -> "ACB&ASW"
-    //         // region.members  -> ["ACB", "ASW"]
-    //     }
-    // });
+}
+
+async function createHeader() {
+    const headerWrap = document.createElement("div");
+    headerWrap.className = "header-block";
+
+    const header = document.createElement("h1");
+    header.textContent = "SNPScape";
+
+    const subtitle = document.createElement("p");
+    subtitle.className = "header-description";
+    subtitle.textContent =
+        "Welcome to SNPScape!\nThe dashboard consists of three main views:\n1) Global common variants: Explore of PCA and UMAP embeddings of global common variants with the option to assess embedding instability.\n2) Superpopulation explorer: See how common variants are shared across superpopulations, and explore PCA/UMAP embeddings of variants unique to each superpopulation.\n3) Continent explorer: Within each superpopulation, examine how variants are shared across subpopulations, and explore embeddings of variants unique to individual subpopulations.";
+    subtitle.style.whiteSpace = "pre-line"; 
+
+    headerWrap.appendChild(header);
+    headerWrap.appendChild(subtitle);
+
+    return headerWrap;
 }
 
 async function createGlobalSection() {
-    const section = createSectionBlock("Global common variants");
+    const { section, title } = createSectionBlock("Global common variants");
+
+    const descriptionEl = createDescription(
+            "This view shows global PCA and UMAP views built from variants that are common across the full dataset (i.e., filtered for a global minor allele frequency > 0.05). Use the display mode dropdowns to compare the base embedding with stability markers or contour summaries.\nThe UMAP panel also has options for group-wise Procrustes aligned contour plots for each superpopulation."
+        )
+    descriptionEl.style.whiteSpace = "pre-line"; 
+    section.appendChild(descriptionEl);
 
     const scrollRow = document.createElement("div");
     scrollRow.className = "scroll-row";
 
     const wrap = document.createElement("div");
-    wrap.className = "wrap";
+    wrap.className = "two-panel-grid";  
 
     const pcaPanel = createPlotPanel({
         titleText: "Global common variants · PCA",
@@ -285,7 +343,7 @@ async function createGlobalSection() {
     const umapPanel = createPlotPanel({
         titleText: "Global common variants · UMAP",
         selectId: "global_umap_select",
-        selectOptions: GLOBAL_MODES,
+        selectOptions: GLOBAL_UMAP_MODES,
         defaultValue: "base",
         placeholderText: "Select a UMAP display mode."
     });
@@ -312,13 +370,57 @@ async function createGlobalSection() {
 }
 
 async function createSuperpopSection(tooltipEl) {
-    const section = createSectionBlock("Superpopulation explorer");
+    const { section, title } = createSectionBlock("Superpopulation explorer");
+
+    section.appendChild(
+        createDescription(
+            "In this view, common variants are filtered at a superpopulation level. Pick a superpopulation from the Euler diagram to view PCA and UMAP for variants that are common only within that superpopulation. For example, clicking AFR shows embeddings based on variants common in AFR but not common globally."
+        )
+    );
+
+    const controls = createControlsRow();
+
+    const colorLabel = document.createElement("div");
+    colorLabel.className = "control-label";
+    colorLabel.textContent = "Plot color scheme:";
+
+    const colorToggle = createColorSchemeToggle({
+        id: "superpop_color_toggle",
+        defaultValue: state.superpop.colorScheme,
+        options: [
+            { value: "superpop", label: "Superpopulation" },
+            { value: "subpop", label: "Subpopulation" }
+        ],
+        onChange: (value) => {
+            setSuperpopColorScheme(value);
+
+            updatePopulationPanel(
+                pcaPanel,
+                state.superpop.selectedPop,
+                state.superpop.selectedDatum,
+                "Superpopulation · PCA",
+                state.superpop.colorScheme
+            );
+
+            updatePopulationPanel(
+                umapPanel,
+                state.superpop.selectedPop,
+                state.superpop.selectedDatum,
+                "Superpopulation · UMAP",
+                state.superpop.colorScheme
+            );
+        }
+    });
+
+    controls.appendChild(colorLabel);
+    controls.appendChild(colorToggle);
+    section.appendChild(controls);
 
     const scrollRow = document.createElement("div");
     scrollRow.className = "scroll-row";
 
     const wrap = document.createElement("div");
-    wrap.className = "wrap";
+    wrap.className = "three-panel-grid";
 
     const eulerPanelBase = createBasePanel({
         className: "panel",
@@ -359,7 +461,8 @@ async function createSuperpopSection(tooltipEl) {
             pcaPanel,
             state.superpop.selectedPop,
             state.superpop.selectedDatum,
-            "Superpopulation · PCA"
+            "Superpopulation · PCA",
+            state.superpop.colorScheme
         );
     });
 
@@ -368,7 +471,8 @@ async function createSuperpopSection(tooltipEl) {
             umapPanel,
             state.superpop.selectedPop,
             state.superpop.selectedDatum,
-            "Superpopulation · UMAP"
+            "Superpopulation · UMAP",
+            state.superpop.colorScheme
         );
     });
 
@@ -376,11 +480,6 @@ async function createSuperpopSection(tooltipEl) {
         figureDiv,
         continentKey: "SP",
         tooltipEl,
-        // onSelectPopulation: (popCode, datum) => {
-        //     setSuperpopSelection(popCode, datum);
-        //     updatePopulationPanel(pcaPanel, popCode, datum, "Superpopulation · PCA");
-        //     updatePopulationPanel(umapPanel, popCode, datum, "Superpopulation · UMAP");
-        // }
         onSelectPopulation: (popCode, datum) => {
             setSuperpopSelection(popCode, datum);
 
@@ -390,8 +489,8 @@ async function createSuperpopSection(tooltipEl) {
             updateDropdownWithPop(pcaPanel.select, popCode);
             updateDropdownWithPop(umapPanel.select, popCode);
 
-            updatePopulationPanel(pcaPanel, popCode, datum, "Superpopulation · PCA");
-            updatePopulationPanel(umapPanel, popCode, datum, "Superpopulation · UMAP");
+            updatePopulationPanel(pcaPanel, popCode, datum, "Superpopulation · PCA", state.superpop.colorScheme);
+            updatePopulationPanel(umapPanel, popCode, datum, "Superpopulation · UMAP", state.superpop.colorScheme);
         }
     });
 
@@ -405,7 +504,13 @@ async function createSuperpopSection(tooltipEl) {
 }
 
 async function createContinentExplorerSection(tooltipEl) {
-    const section = createSectionBlock("Continent explorer");
+    const { section, title } = createSectionBlock("Continent explorer");
+
+    const descriptionEl = createDescription(
+            "In this view, common variants are filtered at a subpopulation level. Choose a continent group, then click a population in the Euler diagram to view three PCA and UMAP plot options:\n1) Variants common only within that population globally.\n2) Variants common only within that population relative to other populations in the same continent group.\n3) Variants common only within that population relative to other populations in the same continent group vs. 5 random SNP subsamples of the same feature size.\nFor example, within Africa, clicking ESN and selecting option 2 from the dropdown highlights variants common in ESN relative to the other South Asian populations."
+        )
+    descriptionEl.style.whiteSpace = "pre-line"; 
+    section.appendChild(descriptionEl);
 
     const controls = createControlsRow();
 
@@ -425,13 +530,33 @@ async function createContinentExplorerSection(tooltipEl) {
 
     continentLabel.appendChild(continentSelect);
     controls.appendChild(continentLabel);
+
+    const colorLabel = document.createElement("div");
+    colorLabel.className = "control-label";
+    colorLabel.textContent = "Plot color scheme:";
+
+    const colorToggle = createColorSchemeToggle({
+        id: "continent_color_toggle",
+        defaultValue: state.continentExplorer.colorScheme,
+        options: [
+            { value: "superpop", label: "Superpopulation" },
+            { value: "subpop", label: "Subpopulation" },
+        ],
+        onChange: (value) => {
+            setContinentColorScheme(value);
+            refreshContinentPanels();
+        }
+    });
+
+    controls.appendChild(colorLabel);
+    controls.appendChild(colorToggle);
     section.appendChild(controls);
 
     const scrollRow = document.createElement("div");
     scrollRow.className = "scroll-row";
 
     const wrap = document.createElement("div");
-    wrap.className = "wrap";
+    wrap.className = "three-panel-grid";
 
     const eulerPanelBase = createBasePanel({
         className: "panel",
@@ -469,26 +594,20 @@ async function createContinentExplorerSection(tooltipEl) {
             pcaPanel,
             state.continentExplorer.selectedPop,
             state.continentExplorer.selectedDatum,
-            "Continent · PCA"
+            "Continent · PCA",
+            state.continentExplorer.colorScheme
         );
         updatePopulationPanel(
             umapPanel,
             state.continentExplorer.selectedPop,
             state.continentExplorer.selectedDatum,
-            "Continent · UMAP"
+            "Continent · UMAP",
+            state.continentExplorer.colorScheme
         );
     }
 
     pcaPanel.select.addEventListener("change", refreshContinentPanels);
     umapPanel.select.addEventListener("change", refreshContinentPanels);
-    // pcaPanel.select.addEventListener("change", () => {
-    //     resetDropdownLabels(pcaPanel.select, PANEL1_OPTIONS);
-    //     refreshContinentPanels();
-    // });
-    // umapPanel.select.addEventListener("change", () => {
-    //     resetDropdownLabels(umapPanel.select, PANEL2_OPTIONS);
-    //     refreshContinentPanels();
-    // });
 
     async function rerenderSelectedContinent() {
         resetPanel(pcaPanel, "Click a population ellipse to display a PCA plot.");
@@ -498,10 +617,6 @@ async function createContinentExplorerSection(tooltipEl) {
             figureDiv,
             continentKey: state.continentExplorer.selectedContinent,
             tooltipEl,
-            // onSelectPopulation: (popCode, datum) => {
-            //     setContinentPopSelection(popCode, datum);
-            //     refreshContinentPanels();
-            // }
             onSelectPopulation: (popCode, datum) => {
                 setContinentPopSelection(popCode, datum);
 
@@ -541,10 +656,12 @@ async function init() {
     const app = document.getElementById("app");
     const tooltipEl = document.getElementById("tooltip");
 
+    const headerSection = await createHeader();
     const globalSection = await createGlobalSection();
     const superpopSection = await createSuperpopSection(tooltipEl);
     const continentSection = await createContinentExplorerSection(tooltipEl);
 
+    app.appendChild(headerSection);
     app.appendChild(globalSection);
     app.appendChild(superpopSection);
     app.appendChild(continentSection);

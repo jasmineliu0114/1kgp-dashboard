@@ -13,9 +13,11 @@ export function renderEulerPlot({
 
   const svg = d3.select(containerEl)
     .append("svg")
-    .attr("width", dim)
-    .attr("height", dim)
-    .attr("viewBox", `0 0 ${dim} ${dim}`);
+    .attr("viewBox", `0 0 ${dim} ${dim}`)
+    .attr("preserveAspectRatio", "xMidYMid meet")
+    .style("width", "100%")
+    .style("height", "100%")
+    .style("display", "block"); 
 
   const xMin = d3.min(ellipses, d => d.h - d.a);
   const xMax = d3.max(ellipses, d => d.h + d.a);

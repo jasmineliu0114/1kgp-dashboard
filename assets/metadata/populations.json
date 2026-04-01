@@ -2,322 +2,820 @@
     "AFR": {
         "continent": "SP",
         "plots": {
-            "unique_pca": "assets/plots/AFR_unique_pca.html",
-            "unique_umap": "assets/plots/AFR_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/AFR_unique_pca_superpop.html",
+                "subpop": "assets/plots/AFR_unique_pca_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/AFR_unique_umap_superpop.html",
+                "subpop": "assets/plots/AFR_unique_umap_subpop.html"
+            }
         }
     },
     "AMR": {
         "continent": "SP",
         "plots": {
-            "unique_pca": "assets/plots/AMR_unique_pca.html",
-            "unique_umap": "assets/plots/AMR_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/AMR_unique_pca_superpop.html",
+                "subpop": "assets/plots/AMR_unique_pca_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/AMR_unique_umap_superpop.html",
+                "subpop": "assets/plots/AMR_unique_umap_subpop.html"
+            }
         }
     },
     "EAS": {
         "continent": "SP",
         "plots": {
-            "unique_pca": "assets/plots/EAS_unique_pca.html",
-            "unique_umap": "assets/plots/EAS_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/EAS_unique_pca_superpop.html",
+                "subpop": "assets/plots/EAS_unique_pca_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/EAS_unique_umap_superpop.html",
+                "subpop": "assets/plots/EAS_unique_umap_subpop.html"
+            }
         }
     },
     "EUR": {
         "continent": "SP",
         "plots": {
-            "unique_pca": "assets/plots/EUR_unique_pca.html",
-            "unique_umap": "assets/plots/EUR_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/EUR_unique_pca_superpop.html",
+                "subpop": "assets/plots/EUR_unique_pca_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/EUR_unique_umap_superpop.html",
+                "subpop": "assets/plots/EUR_unique_umap_subpop.html"
+            }
         }
     },
     "SAS": {
         "continent": "SP",
         "plots": {
-            "unique_pca": "assets/plots/SAS_unique_pca.html",
-            "unique_umap": "assets/plots/SAS_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/SAS_unique_pca_superpop.html",
+                "subpop": "assets/plots/SAS_unique_pca_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/SAS_unique_umap_superpop.html",
+                "subpop": "assets/plots/SAS_unique_umap_subpop.html"
+            }
         }
     },
     "ACB": {
         "continent": "AFR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/ACB_unique_in_AFR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/ACB_unique_in_AFR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/ACB_unique_in_AFR_pca.html",
-            "unique_umap_cont": "assets/plots/ACB_unique_in_AFR_umap.html",
-            "unique_pca": "assets/plots/ACB.html",
-            "unique_umap": "assets/plots/ACB_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/ACB_superpop.html",
+                "subpop": "assets/plots/ACB_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/ACB_unique_umap_superpop.html",
+                "subpop": "assets/plots/ACB_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/ACB_unique_in_AFR_pca_superpop.html",
+                "subpop": "assets/plots/ACB_unique_in_AFR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/ACB_unique_in_AFR_umap_superpop.html",
+                "subpop": "assets/plots/ACB_unique_in_AFR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/ACB_unique_in_AFR_pca_animated_superpop.html",
+                "subpop": "assets/plots/ACB_unique_in_AFR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/ACB_unique_in_AFR_umap_animated_superpop.html",
+                "subpop": "assets/plots/ACB_unique_in_AFR_umap_animated_subpop.html"
+            }
         }
     },
     "ASW": {
         "continent": "AFR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/ASW_unique_in_AFR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/ASW_unique_in_AFR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/ASW_unique_in_AFR_pca.html",
-            "unique_umap_cont": "assets/plots/ASW_unique_in_AFR_umap.html",
-            "unique_pca": "assets/plots/ASW.html",
-            "unique_umap": "assets/plots/ASW_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/ASW_superpop.html",
+                "subpop": "assets/plots/ASW_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/ASW_unique_umap_superpop.html",
+                "subpop": "assets/plots/ASW_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/ASW_unique_in_AFR_pca_superpop.html",
+                "subpop": "assets/plots/ASW_unique_in_AFR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/ASW_unique_in_AFR_umap_superpop.html",
+                "subpop": "assets/plots/ASW_unique_in_AFR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/ASW_unique_in_AFR_pca_animated_superpop.html",
+                "subpop": "assets/plots/ASW_unique_in_AFR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/ASW_unique_in_AFR_umap_animated_superpop.html",
+                "subpop": "assets/plots/ASW_unique_in_AFR_umap_animated_subpop.html"
+            }
         }
     },
     "ESN": {
         "continent": "AFR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/ESN_unique_in_AFR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/ESN_unique_in_AFR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/ESN_unique_in_AFR_pca.html",
-            "unique_umap_cont": "assets/plots/ESN_unique_in_AFR_umap.html",
-            "unique_pca": "assets/plots/ESN.html",
-            "unique_umap": "assets/plots/ESN_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/ESN_superpop.html",
+                "subpop": "assets/plots/ESN_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/ESN_unique_umap_superpop.html",
+                "subpop": "assets/plots/ESN_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/ESN_unique_in_AFR_pca_superpop.html",
+                "subpop": "assets/plots/ESN_unique_in_AFR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/ESN_unique_in_AFR_umap_superpop.html",
+                "subpop": "assets/plots/ESN_unique_in_AFR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/ESN_unique_in_AFR_pca_animated_superpop.html",
+                "subpop": "assets/plots/ESN_unique_in_AFR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/ESN_unique_in_AFR_umap_animated_superpop.html",
+                "subpop": "assets/plots/ESN_unique_in_AFR_umap_animated_subpop.html"
+            }
         }
     },
     "GWD": {
         "continent": "AFR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/GWD_unique_in_AFR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/GWD_unique_in_AFR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/GWD_unique_in_AFR_pca.html",
-            "unique_umap_cont": "assets/plots/GWD_unique_in_AFR_umap.html",
-            "unique_pca": "assets/plots/GWD.html",
-            "unique_umap": "assets/plots/GWD_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/GWD_superpop.html",
+                "subpop": "assets/plots/GWD_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/GWD_unique_umap_superpop.html",
+                "subpop": "assets/plots/GWD_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/GWD_unique_in_AFR_pca_superpop.html",
+                "subpop": "assets/plots/GWD_unique_in_AFR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/GWD_unique_in_AFR_umap_superpop.html",
+                "subpop": "assets/plots/GWD_unique_in_AFR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/GWD_unique_in_AFR_pca_animated_superpop.html",
+                "subpop": "assets/plots/GWD_unique_in_AFR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/GWD_unique_in_AFR_umap_animated_superpop.html",
+                "subpop": "assets/plots/GWD_unique_in_AFR_umap_animated_subpop.html"
+            }
         }
     },
     "LWK": {
         "continent": "AFR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/LWK_unique_in_AFR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/LWK_unique_in_AFR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/LWK_unique_in_AFR_pca.html",
-            "unique_umap_cont": "assets/plots/LWK_unique_in_AFR_umap.html",
-            "unique_pca": "assets/plots/LWK.html",
-            "unique_umap": "assets/plots/LWK_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/LWK_superpop.html",
+                "subpop": "assets/plots/LWK_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/LWK_unique_umap_superpop.html",
+                "subpop": "assets/plots/LWK_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/LWK_unique_in_AFR_pca_superpop.html",
+                "subpop": "assets/plots/LWK_unique_in_AFR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/LWK_unique_in_AFR_umap_superpop.html",
+                "subpop": "assets/plots/LWK_unique_in_AFR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/LWK_unique_in_AFR_pca_animated_superpop.html",
+                "subpop": "assets/plots/LWK_unique_in_AFR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/LWK_unique_in_AFR_umap_animated_superpop.html",
+                "subpop": "assets/plots/LWK_unique_in_AFR_umap_animated_subpop.html"
+            }
         }
     },
     "MSL": {
         "continent": "AFR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/MSL_unique_in_AFR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/MSL_unique_in_AFR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/MSL_unique_in_AFR_pca.html",
-            "unique_umap_cont": "assets/plots/MSL_unique_in_AFR_umap.html",
-            "unique_pca": "assets/plots/MSL.html",
-            "unique_umap": "assets/plots/MSL_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/MSL_superpop.html",
+                "subpop": "assets/plots/MSL_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/MSL_unique_umap_superpop.html",
+                "subpop": "assets/plots/MSL_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/MSL_unique_in_AFR_pca_superpop.html",
+                "subpop": "assets/plots/MSL_unique_in_AFR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/MSL_unique_in_AFR_umap_superpop.html",
+                "subpop": "assets/plots/MSL_unique_in_AFR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/MSL_unique_in_AFR_pca_animated_superpop.html",
+                "subpop": "assets/plots/MSL_unique_in_AFR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/MSL_unique_in_AFR_umap_animated_superpop.html",
+                "subpop": "assets/plots/MSL_unique_in_AFR_umap_animated_subpop.html"
+            }
         }
     },
     "YRI": {
         "continent": "AFR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/YRI_unique_in_AFR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/YRI_unique_in_AFR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/YRI_unique_in_AFR_pca.html",
-            "unique_umap_cont": "assets/plots/YRI_unique_in_AFR_umap.html",
-            "unique_pca": "assets/plots/YRI.html",
-            "unique_umap": "assets/plots/YRI_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/YRI_superpop.html",
+                "subpop": "assets/plots/YRI_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/YRI_unique_umap_superpop.html",
+                "subpop": "assets/plots/YRI_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/YRI_unique_in_AFR_pca_superpop.html",
+                "subpop": "assets/plots/YRI_unique_in_AFR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/YRI_unique_in_AFR_umap_superpop.html",
+                "subpop": "assets/plots/YRI_unique_in_AFR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/YRI_unique_in_AFR_pca_animated_superpop.html",
+                "subpop": "assets/plots/YRI_unique_in_AFR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/YRI_unique_in_AFR_umap_animated_superpop.html",
+                "subpop": "assets/plots/YRI_unique_in_AFR_umap_animated_subpop.html"
+            }
         }
     },
     "CLM": {
         "continent": "AMR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/CLM_unique_in_AMR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/CLM_unique_in_AMR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/CLM_unique_in_AMR_pca.html",
-            "unique_umap_cont": "assets/plots/CLM_unique_in_AMR_umap.html",
-            "unique_pca": "assets/plots/CLM.html",
-            "unique_umap": "assets/plots/CLM_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/CLM_superpop.html",
+                "subpop": "assets/plots/CLM_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/CLM_unique_umap_superpop.html",
+                "subpop": "assets/plots/CLM_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/CLM_unique_in_AMR_pca_superpop.html",
+                "subpop": "assets/plots/CLM_unique_in_AMR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/CLM_unique_in_AMR_umap_superpop.html",
+                "subpop": "assets/plots/CLM_unique_in_AMR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/CLM_unique_in_AMR_pca_animated_superpop.html",
+                "subpop": "assets/plots/CLM_unique_in_AMR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/CLM_unique_in_AMR_umap_animated_superpop.html",
+                "subpop": "assets/plots/CLM_unique_in_AMR_umap_animated_subpop.html"
+            }
         }
     },
     "MXL": {
         "continent": "AMR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/MXL_unique_in_AMR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/MXL_unique_in_AMR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/MXL_unique_in_AMR_pca.html",
-            "unique_umap_cont": "assets/plots/MXL_unique_in_AMR_umap.html",
-            "unique_pca": "assets/plots/MXL.html",
-            "unique_umap": "assets/plots/MXL_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/MXL_superpop.html",
+                "subpop": "assets/plots/MXL_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/MXL_unique_umap_superpop.html",
+                "subpop": "assets/plots/MXL_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/MXL_unique_in_AMR_pca_superpop.html",
+                "subpop": "assets/plots/MXL_unique_in_AMR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/MXL_unique_in_AMR_umap_superpop.html",
+                "subpop": "assets/plots/MXL_unique_in_AMR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/MXL_unique_in_AMR_pca_animated_superpop.html",
+                "subpop": "assets/plots/MXL_unique_in_AMR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/MXL_unique_in_AMR_umap_animated_superpop.html",
+                "subpop": "assets/plots/MXL_unique_in_AMR_umap_animated_subpop.html"
+            }
         }
     },
     "PEL": {
         "continent": "AMR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/PEL_unique_in_AMR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/PEL_unique_in_AMR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/PEL_unique_in_AMR_pca.html",
-            "unique_umap_cont": "assets/plots/PEL_unique_in_AMR_umap.html",
-            "unique_pca": "assets/plots/PEL.html",
-            "unique_umap": "assets/plots/PEL_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/PEL_superpop.html",
+                "subpop": "assets/plots/PEL_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/PEL_unique_umap_superpop.html",
+                "subpop": "assets/plots/PEL_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/PEL_unique_in_AMR_pca_superpop.html",
+                "subpop": "assets/plots/PEL_unique_in_AMR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/PEL_unique_in_AMR_umap_superpop.html",
+                "subpop": "assets/plots/PEL_unique_in_AMR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/PEL_unique_in_AMR_pca_animated_superpop.html",
+                "subpop": "assets/plots/PEL_unique_in_AMR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/PEL_unique_in_AMR_umap_animated_superpop.html",
+                "subpop": "assets/plots/PEL_unique_in_AMR_umap_animated_subpop.html"
+            }
         }
     },
     "PUR": {
         "continent": "AMR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/PUR_unique_in_AMR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/PUR_unique_in_AMR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/PUR_unique_in_AMR_pca.html",
-            "unique_umap_cont": "assets/plots/PUR_unique_in_AMR_umap.html",
-            "unique_pca": "assets/plots/PUR.html",
-            "unique_umap": "assets/plots/PUR_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/PUR_superpop.html",
+                "subpop": "assets/plots/PUR_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/PUR_unique_umap_superpop.html",
+                "subpop": "assets/plots/PUR_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/PUR_unique_in_AMR_pca_superpop.html",
+                "subpop": "assets/plots/PUR_unique_in_AMR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/PUR_unique_in_AMR_umap_superpop.html",
+                "subpop": "assets/plots/PUR_unique_in_AMR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/PUR_unique_in_AMR_pca_animated_superpop.html",
+                "subpop": "assets/plots/PUR_unique_in_AMR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/PUR_unique_in_AMR_umap_animated_superpop.html",
+                "subpop": "assets/plots/PUR_unique_in_AMR_umap_animated_subpop.html"
+            }
         }
     },
     "CDX": {
         "continent": "EAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/CDX_unique_in_EAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/CDX_unique_in_EAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/CDX_unique_in_EAS_pca.html",
-            "unique_umap_cont": "assets/plots/CDX_unique_in_EAS_umap.html",
-            "unique_pca": "assets/plots/CDX.html",
-            "unique_umap": "assets/plots/CDX_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/CDX_superpop.html",
+                "subpop": "assets/plots/CDX_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/CDX_unique_umap_superpop.html",
+                "subpop": "assets/plots/CDX_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/CDX_unique_in_EAS_pca_superpop.html",
+                "subpop": "assets/plots/CDX_unique_in_EAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/CDX_unique_in_EAS_umap_superpop.html",
+                "subpop": "assets/plots/CDX_unique_in_EAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/CDX_unique_in_EAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/CDX_unique_in_EAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/CDX_unique_in_EAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/CDX_unique_in_EAS_umap_animated_subpop.html"
+            }
         }
     },
     "CHB": {
         "continent": "EAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/CHB_unique_in_EAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/CHB_unique_in_EAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/CHB_unique_in_EAS_pca.html",
-            "unique_umap_cont": "assets/plots/CHB_unique_in_EAS_umap.html",
-            "unique_pca": "assets/plots/CHB.html",
-            "unique_umap": "assets/plots/CHB_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/CHB_superpop.html",
+                "subpop": "assets/plots/CHB_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/CHB_unique_umap_superpop.html",
+                "subpop": "assets/plots/CHB_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/CHB_unique_in_EAS_pca_superpop.html",
+                "subpop": "assets/plots/CHB_unique_in_EAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/CHB_unique_in_EAS_umap_superpop.html",
+                "subpop": "assets/plots/CHB_unique_in_EAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/CHB_unique_in_EAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/CHB_unique_in_EAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/CHB_unique_in_EAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/CHB_unique_in_EAS_umap_animated_subpop.html"
+            }
         }
     },
     "CHS": {
         "continent": "EAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/CHS_unique_in_EAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/CHS_unique_in_EAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/CHS_unique_in_EAS_pca.html",
-            "unique_umap_cont": "assets/plots/CHS_unique_in_EAS_umap.html",
-            "unique_pca": "assets/plots/CHS.html",
-            "unique_umap": "assets/plots/CHS_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/CHS_superpop.html",
+                "subpop": "assets/plots/CHS_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/CHS_unique_umap_superpop.html",
+                "subpop": "assets/plots/CHS_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/CHS_unique_in_EAS_pca_superpop.html",
+                "subpop": "assets/plots/CHS_unique_in_EAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/CHS_unique_in_EAS_umap_superpop.html",
+                "subpop": "assets/plots/CHS_unique_in_EAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/CHS_unique_in_EAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/CHS_unique_in_EAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/CHS_unique_in_EAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/CHS_unique_in_EAS_umap_animated_subpop.html"
+            }
         }
     },
     "JPT": {
         "continent": "EAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/JPT_unique_in_EAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/JPT_unique_in_EAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/JPT_unique_in_EAS_pca.html",
-            "unique_umap_cont": "assets/plots/JPT_unique_in_EAS_umap.html",
-            "unique_pca": "assets/plots/JPT.html",
-            "unique_umap": "assets/plots/JPT_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/JPT_superpop.html",
+                "subpop": "assets/plots/JPT_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/JPT_unique_umap_superpop.html",
+                "subpop": "assets/plots/JPT_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/JPT_unique_in_EAS_pca_superpop.html",
+                "subpop": "assets/plots/JPT_unique_in_EAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/JPT_unique_in_EAS_umap_superpop.html",
+                "subpop": "assets/plots/JPT_unique_in_EAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/JPT_unique_in_EAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/JPT_unique_in_EAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/JPT_unique_in_EAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/JPT_unique_in_EAS_umap_animated_subpop.html"
+            }
         }
     },
     "KHV": {
         "continent": "EAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/KHV_unique_in_EAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/KHV_unique_in_EAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/KHV_unique_in_EAS_pca.html",
-            "unique_umap_cont": "assets/plots/KHV_unique_in_EAS_umap.html",
-            "unique_pca": "assets/plots/KHV.html",
-            "unique_umap": "assets/plots/KHV_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/KHV_superpop.html",
+                "subpop": "assets/plots/KHV_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/KHV_unique_umap_superpop.html",
+                "subpop": "assets/plots/KHV_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/KHV_unique_in_EAS_pca_superpop.html",
+                "subpop": "assets/plots/KHV_unique_in_EAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/KHV_unique_in_EAS_umap_superpop.html",
+                "subpop": "assets/plots/KHV_unique_in_EAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/KHV_unique_in_EAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/KHV_unique_in_EAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/KHV_unique_in_EAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/KHV_unique_in_EAS_umap_animated_subpop.html"
+            }
         }
     },
     "CEU": {
         "continent": "EUR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/CEU_unique_in_EUR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/CEU_unique_in_EUR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/CEU_unique_in_EUR_pca.html",
-            "unique_umap_cont": "assets/plots/CEU_unique_in_EUR_umap.html",
-            "unique_pca": "assets/plots/CEU.html",
-            "unique_umap": "assets/plots/CEU_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/CEU_superpop.html",
+                "subpop": "assets/plots/CEU_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/CEU_unique_umap_superpop.html",
+                "subpop": "assets/plots/CEU_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/CEU_unique_in_EUR_pca_superpop.html",
+                "subpop": "assets/plots/CEU_unique_in_EUR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/CEU_unique_in_EUR_umap_superpop.html",
+                "subpop": "assets/plots/CEU_unique_in_EUR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/CEU_unique_in_EUR_pca_animated_superpop.html",
+                "subpop": "assets/plots/CEU_unique_in_EUR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/CEU_unique_in_EUR_umap_animated_superpop.html",
+                "subpop": "assets/plots/CEU_unique_in_EUR_umap_animated_subpop.html"
+            }
         }
     },
     "FIN": {
         "continent": "EUR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/FIN_unique_in_EUR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/FIN_unique_in_EUR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/FIN_unique_in_EUR_pca.html",
-            "unique_umap_cont": "assets/plots/FIN_unique_in_EUR_umap.html",
-            "unique_pca": "assets/plots/FIN.html",
-            "unique_umap": "assets/plots/FIN_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/FIN_superpop.html",
+                "subpop": "assets/plots/FIN_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/FIN_unique_umap_superpop.html",
+                "subpop": "assets/plots/FIN_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/FIN_unique_in_EUR_pca_superpop.html",
+                "subpop": "assets/plots/FIN_unique_in_EUR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/FIN_unique_in_EUR_umap_superpop.html",
+                "subpop": "assets/plots/FIN_unique_in_EUR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/FIN_unique_in_EUR_pca_animated_superpop.html",
+                "subpop": "assets/plots/FIN_unique_in_EUR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/FIN_unique_in_EUR_umap_animated_superpop.html",
+                "subpop": "assets/plots/FIN_unique_in_EUR_umap_animated_subpop.html"
+            }
         }
     },
     "GBR": {
         "continent": "EUR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/GBR_unique_in_EUR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/GBR_unique_in_EUR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/GBR_unique_in_EUR_pca.html",
-            "unique_umap_cont": "assets/plots/GBR_unique_in_EUR_umap.html",
-            "unique_pca": "assets/plots/GBR.html",
-            "unique_umap": "assets/plots/GBR_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/GBR_superpop.html",
+                "subpop": "assets/plots/GBR_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/GBR_unique_umap_superpop.html",
+                "subpop": "assets/plots/GBR_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/GBR_unique_in_EUR_pca_superpop.html",
+                "subpop": "assets/plots/GBR_unique_in_EUR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/GBR_unique_in_EUR_umap_superpop.html",
+                "subpop": "assets/plots/GBR_unique_in_EUR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/GBR_unique_in_EUR_pca_animated_superpop.html",
+                "subpop": "assets/plots/GBR_unique_in_EUR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/GBR_unique_in_EUR_umap_animated_superpop.html",
+                "subpop": "assets/plots/GBR_unique_in_EUR_umap_animated_subpop.html"
+            }
         }
     },
     "IBS": {
         "continent": "EUR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/IBS_unique_in_EUR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/IBS_unique_in_EUR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/IBS_unique_in_EUR_pca.html",
-            "unique_umap_cont": "assets/plots/IBS_unique_in_EUR_umap.html",
-            "unique_pca": "assets/plots/IBS.html",
-            "unique_umap": "assets/plots/IBS_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/IBS_superpop.html",
+                "subpop": "assets/plots/IBS_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/IBS_unique_umap_superpop.html",
+                "subpop": "assets/plots/IBS_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/IBS_unique_in_EUR_pca_superpop.html",
+                "subpop": "assets/plots/IBS_unique_in_EUR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/IBS_unique_in_EUR_umap_superpop.html",
+                "subpop": "assets/plots/IBS_unique_in_EUR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/IBS_unique_in_EUR_pca_animated_superpop.html",
+                "subpop": "assets/plots/IBS_unique_in_EUR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/IBS_unique_in_EUR_umap_animated_superpop.html",
+                "subpop": "assets/plots/IBS_unique_in_EUR_umap_animated_subpop.html"
+            }
         }
     },
     "TSI": {
         "continent": "EUR",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/TSI_unique_in_EUR_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/TSI_unique_in_EUR_umap_animated.html",
-            "unique_pca_cont": "assets/plots/TSI_unique_in_EUR_pca.html",
-            "unique_umap_cont": "assets/plots/TSI_unique_in_EUR_umap.html",
-            "unique_pca": "assets/plots/TSI.html",
-            "unique_umap": "assets/plots/TSI_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/TSI_superpop.html",
+                "subpop": "assets/plots/TSI_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/TSI_unique_umap_superpop.html",
+                "subpop": "assets/plots/TSI_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/TSI_unique_in_EUR_pca_superpop.html",
+                "subpop": "assets/plots/TSI_unique_in_EUR_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/TSI_unique_in_EUR_umap_superpop.html",
+                "subpop": "assets/plots/TSI_unique_in_EUR_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/TSI_unique_in_EUR_pca_animated_superpop.html",
+                "subpop": "assets/plots/TSI_unique_in_EUR_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/TSI_unique_in_EUR_umap_animated_superpop.html",
+                "subpop": "assets/plots/TSI_unique_in_EUR_umap_animated_subpop.html"
+            }
         }
     },
     "BEB": {
         "continent": "SAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/BEB_unique_in_SAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/BEB_unique_in_SAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/BEB_unique_in_SAS_pca.html",
-            "unique_umap_cont": "assets/plots/BEB_unique_in_SAS_umap.html",
-            "unique_pca": "assets/plots/BEB.html",
-            "unique_umap": "assets/plots/BEB_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/BEB_superpop.html",
+                "subpop": "assets/plots/BEB_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/BEB_unique_umap_superpop.html",
+                "subpop": "assets/plots/BEB_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/BEB_unique_in_SAS_pca_superpop.html",
+                "subpop": "assets/plots/BEB_unique_in_SAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/BEB_unique_in_SAS_umap_superpop.html",
+                "subpop": "assets/plots/BEB_unique_in_SAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/BEB_unique_in_SAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/BEB_unique_in_SAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/BEB_unique_in_SAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/BEB_unique_in_SAS_umap_animated_subpop.html"
+            }
         }
     },
     "GIH": {
         "continent": "SAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/GIH_unique_in_SAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/GIH_unique_in_SAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/GIH_unique_in_SAS_pca.html",
-            "unique_umap_cont": "assets/plots/GIH_unique_in_SAS_umap.html",
-            "unique_pca": "assets/plots/GIH.html",
-            "unique_umap": "assets/plots/GIH_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/GIH_superpop.html",
+                "subpop": "assets/plots/GIH_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/GIH_unique_umap_superpop.html",
+                "subpop": "assets/plots/GIH_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/GIH_unique_in_SAS_pca_superpop.html",
+                "subpop": "assets/plots/GIH_unique_in_SAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/GIH_unique_in_SAS_umap_superpop.html",
+                "subpop": "assets/plots/GIH_unique_in_SAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/GIH_unique_in_SAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/GIH_unique_in_SAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/GIH_unique_in_SAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/GIH_unique_in_SAS_umap_animated_subpop.html"
+            }
         }
     },
     "ITU": {
         "continent": "SAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/ITU_unique_in_SAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/ITU_unique_in_SAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/ITU_unique_in_SAS_pca.html",
-            "unique_umap_cont": "assets/plots/ITU_unique_in_SAS_umap.html",
-            "unique_pca": "assets/plots/ITU.html",
-            "unique_umap": "assets/plots/ITU_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/ITU_superpop.html",
+                "subpop": "assets/plots/ITU_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/ITU_unique_umap_superpop.html",
+                "subpop": "assets/plots/ITU_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/ITU_unique_in_SAS_pca_superpop.html",
+                "subpop": "assets/plots/ITU_unique_in_SAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/ITU_unique_in_SAS_umap_superpop.html",
+                "subpop": "assets/plots/ITU_unique_in_SAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/ITU_unique_in_SAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/ITU_unique_in_SAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/ITU_unique_in_SAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/ITU_unique_in_SAS_umap_animated_subpop.html"
+            }
         }
     },
     "PJL": {
         "continent": "SAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/PJL_unique_in_SAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/PJL_unique_in_SAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/PJL_unique_in_SAS_pca.html",
-            "unique_umap_cont": "assets/plots/PJL_unique_in_SAS_umap.html",
-            "unique_pca": "assets/plots/PJL.html",
-            "unique_umap": "assets/plots/PJL_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/PJL_superpop.html",
+                "subpop": "assets/plots/PJL_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/PJL_unique_umap_superpop.html",
+                "subpop": "assets/plots/PJL_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/PJL_unique_in_SAS_pca_superpop.html",
+                "subpop": "assets/plots/PJL_unique_in_SAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/PJL_unique_in_SAS_umap_superpop.html",
+                "subpop": "assets/plots/PJL_unique_in_SAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/PJL_unique_in_SAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/PJL_unique_in_SAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/PJL_unique_in_SAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/PJL_unique_in_SAS_umap_animated_subpop.html"
+            }
         }
     },
     "STU": {
         "continent": "SAS",
         "plots": {
-            "unique_pca_cont_animated": "assets/plots/STU_unique_in_SAS_pca_animated.html",
-            "unique_umap_cont_animated": "assets/plots/STU_unique_in_SAS_umap_animated.html",
-            "unique_pca_cont": "assets/plots/STU_unique_in_SAS_pca.html",
-            "unique_umap_cont": "assets/plots/STU_unique_in_SAS_umap.html",
-            "unique_pca": "assets/plots/STU.html",
-            "unique_umap": "assets/plots/STU_unique_umap.html"
+            "unique_pca": {
+                "superpop": "assets/plots/STU_superpop.html",
+                "subpop": "assets/plots/STU_subpop.html"
+            },
+            "unique_umap": {
+                "superpop": "assets/plots/STU_unique_umap_superpop.html",
+                "subpop": "assets/plots/STU_unique_umap_subpop.html"
+            },
+            "unique_pca_cont": {
+                "superpop": "assets/plots/STU_unique_in_SAS_pca_superpop.html",
+                "subpop": "assets/plots/STU_unique_in_SAS_pca_subpop.html"
+            },
+            "unique_umap_cont": {
+                "superpop": "assets/plots/STU_unique_in_SAS_umap_superpop.html",
+                "subpop": "assets/plots/STU_unique_in_SAS_umap_subpop.html"
+            },
+            "unique_pca_cont_animated": {
+                "superpop": "assets/plots/STU_unique_in_SAS_pca_animated_superpop.html",
+                "subpop": "assets/plots/STU_unique_in_SAS_pca_animated_subpop.html"
+            },
+            "unique_umap_cont_animated": {
+                "superpop": "assets/plots/STU_unique_in_SAS_umap_animated_superpop.html",
+                "subpop": "assets/plots/STU_unique_in_SAS_umap_animated_subpop.html"
+            }
         }
     }
 }

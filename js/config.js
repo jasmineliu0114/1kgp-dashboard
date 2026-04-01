@@ -49,3 +49,16 @@ export const GLOBAL_MODES = [
   { value: "contour", label: "With contours" },
   { value: "contour_centroid", label: "With centroid contours" }
 ];
+
+export const GLOBAL_UMAP_MODES = [
+  { value: "base", label: "Base" },
+  { value: "stability", label: "With stability markers" },
+  { value: "contour", label: "With contours" },
+  { value: "contour_centroid", label: "With centroid contours" },
+
+  { value: "contour_afr", label: "Africa contours" },
+  { value: "contour_amr", label: "Americas contours" },
+  { value: "contour_eas", label: "East Asia contours" },
+  { value: "contour_eur", label: "Europe contours" },
+  { value: "contour_sas", label: "South Asia contours" }
+];
