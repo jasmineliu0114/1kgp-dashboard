@@ -507,7 +507,7 @@ async function createContinentExplorerSection(tooltipEl) {
     const { section, title } = createSectionBlock("Continent explorer");
 
     const descriptionEl = createDescription(
-            "In this view, common variants are filtered at a subpopulation level. Choose a continent group, then click a population in the Euler diagram to view three PCA and UMAP plot options:\n1) Variants common only within that population globally.\n2) Variants common only within that population relative to other populations in the same continent group.\n3) Variants common only within that population relative to other populations in the same continent group vs. 5 random SNP subsamples of the same feature size.\nFor example, within Africa, clicking ESN and selecting option 2 from the dropdown highlights variants common in ESN relative to the other South Asian populations."
+            "In this view, common variants are filtered at a subpopulation level. Choose a continent group, then click a population in the Euler diagram to view three PCA and UMAP plot options:\n1) Variants common only within that population globally.\n2) Variants common only within that population relative to other populations in the same continent group.\n3) Variants common only within that population relative to other populations in the same continent group vs. 5 random SNP subsamples of the same feature size.\nFor example, within Africa, clicking ESN and selecting option 2 from the dropdown highlights variants common in ESN relative to the other African populations."
         )
     descriptionEl.style.whiteSpace = "pre-line"; 
     section.appendChild(descriptionEl);
